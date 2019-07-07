@@ -1,0 +1,263 @@
+﻿[2019/07/04 13:16:44]DataStorage..ctor.Message:Image Files OK!
+[2019/07/04 13:16:44]DataStorage..ctor.Message:Font Files OK!
+[2019/07/04 13:16:44]DataStorage..ctor.Message:Complete!
+[2019/07/04 13:16:44]Program:Start!
+[2019/07/04 13:16:45]DataStorage.PrintImageData:Kay=sample1.png,Value = System.Drawing.Bitmap
+[2019/07/04 13:16:45]DataStorage.PrintImageData:Kay=sample2.png,Value = System.Drawing.Bitmap
+[2019/07/04 13:16:45]DataStorage.PrintImageData:Kay=sample3.png,Value = System.Drawing.Bitmap
+[2019/07/04 13:16:45]DataStorage.PrintImageData:Kay=sample4.png,Value = System.Drawing.Bitmap
+[2019/07/04 13:16:45]DataStorage.PrintImageData:Kay=textframe.png,Value = System.Drawing.Bitmap
+[2019/07/04 13:16:45]DataStorage.PrintImageData:Kay=Transparent.png,Value = System.Drawing.Bitmap
+[2019/07/04 13:16:45]DataStorage.PrintFontData:Kay=genkai-mincho.ttf,Value = [Font: Name=源界明朝, Size=25, Units=3, GdiCharSet=1, GdiVerticalFont=False]
+[2019/07/04 13:16:45]DataStorage.PrintFontData:Kay=ラノベPOP.ttf,Value = [Font: Name=07ラノベPOP, Size=25, Units=3, GdiCharSet=1, GdiVerticalFont=False]
+[2019/07/04 13:16:45]Script..ctor.Message:Lines.Length=81
+[2019/07/04 13:16:45]Script..ctor.Message:Commands[CurrentLabelName].Enqueue(ImageCommand)
+[2019/07/04 13:16:45]ImageCommand..ctor.Message:Complete!
+[2019/07/04 13:16:45]Script..ctor.Message:Commands[CurrentLabelName].Enqueue(ImageCommand)
+[2019/07/04 13:16:45]ImageCommand..ctor.Message:Complete!
+[2019/07/04 13:16:45]Script..ctor.Message:Commands[CurrentLabelName].Enqueue(Wait)
+[2019/07/04 13:16:45]Wait..ctor.Message:Complete!
+[2019/07/04 13:16:45]Script..ctor.Message:Commands[CurrentLabelName].Enqueue(Display)
+[2019/07/04 13:16:45]DisplayText..ctor.Message:Complete!
+[2019/07/04 13:16:45]ClickWait..ctor.Message:Complete!
+[2019/07/04 13:16:45]Script..ctor.Message:Commands[CurrentLabelName].Enqueue(ClearMessage)
+[2019/07/04 13:16:45]ClearMessage..ctor.Message:Complete!
+[2019/07/04 13:16:45]Script..ctor.Message:Commands[CurrentLabelName].Enqueue(Wait)
+[2019/07/04 13:16:45]Wait..ctor.Message:Complete!
+[2019/07/04 13:16:45]Script..ctor.Message:Commands[CurrentLabelName].Enqueue(ImageCommand)
+[2019/07/04 13:16:45]ImageCommand..ctor.Message:Complete!
+[2019/07/04 13:16:45]Script..ctor.Message:Commands[CurrentLabelName].Enqueue(Display)
+[2019/07/04 13:16:45]DisplayText..ctor.Message:Complete!
+[2019/07/04 13:16:45]ClickWait..ctor.Message:Complete!
+[2019/07/04 13:16:45]Script..ctor.Message:Commands[CurrentLabelName].Enqueue(ClearMessage)
+[2019/07/04 13:16:45]ClearMessage..ctor.Message:Complete!
+[2019/07/04 13:16:45]Script..ctor.Message:Commands[CurrentLabelName].Enqueue(ImageCommand)
+[2019/07/04 13:16:45]ImageCommand..ctor.Message:Complete!
+[2019/07/04 13:16:45]Script..ctor.Message:Commands[CurrentLabelName].Enqueue(Display)
+[2019/07/04 13:16:45]DisplayText..ctor.Message:Complete!
+[2019/07/04 13:16:45]ClickWait..ctor.Message:Complete!
+[2019/07/04 13:16:45]Script..ctor.Message:Commands[CurrentLabelName].Enqueue(ImageCommand)
+[2019/07/04 13:16:45]ImageCommand..ctor.Message:Complete!
+[2019/07/04 13:16:45]Script..ctor.Message:Commands[CurrentLabelName].Enqueue(Display)
+[2019/07/04 13:16:45]DisplayText..ctor.Message:Complete!
+[2019/07/04 13:16:45]ClickWait..ctor.Message:Complete!
+[2019/07/04 13:16:45]Script..ctor.Message:Commands[CurrentLabelName].Enqueue(ClearMessage)
+[2019/07/04 13:16:45]ClearMessage..ctor.Message:Complete!
+[2019/07/04 13:16:45]Script..ctor.Message:Commands[CurrentLabelName].Enqueue(Transiton)
+[2019/07/04 13:16:45]Transiton..ctor.Message:Complete!
+[2019/07/04 13:16:45]Script..ctor.Message:Commands[CurrentLabelName].Enqueue(Wait)
+[2019/07/04 13:16:45]Wait..ctor.Message:Complete!
+[2019/07/04 13:16:45]Script..ctor.Message:Commands[CurrentLabelName].Enqueue(Display)
+[2019/07/04 13:16:45]DisplayText..ctor.Message:Complete!
+[2019/07/04 13:16:45]ClickWait..ctor.Message:Complete!
+[2019/07/04 13:16:45]Script..ctor.Message:Commands[CurrentLabelName].Enqueue(ClearMessage)
+[2019/07/04 13:16:45]ClearMessage..ctor.Message:Complete!
+[2019/07/04 13:16:45]Script..ctor.Message:Commands[CurrentLabelName].Enqueue(Link)
+[2019/07/04 13:16:45]Link..ctor.Message:Complete!
+[2019/07/04 13:16:45]Script..ctor.Message:Commands[CurrentLabelName].Enqueue(Link)
+[2019/07/04 13:16:45]Link..ctor.Message:Complete!
+[2019/07/04 13:16:45]Script..ctor.Message:Commands[CurrentLabelName].Enqueue(Link)
+[2019/07/04 13:16:45]Link..ctor.Message:Complete!
+[2019/07/04 13:16:45]Script..ctor.Message:Commands[CurrentLabelName].Enqueue(LinkStop)
+[2019/07/04 13:16:45]Stop..ctor.Message:Complete!
+[2019/07/04 13:16:45]Script..ctor.ChangeCurrentLabelName:*start -> *select1
+[2019/07/04 13:16:45]Script..ctor.Message:Commands[CurrentLabelName].Enqueue(Wait)
+[2019/07/04 13:16:45]Wait..ctor.Message:Complete!
+[2019/07/04 13:16:45]Script..ctor.Message:Commands[CurrentLabelName].Enqueue(Display)
+[2019/07/04 13:16:45]DisplayText..ctor.Message:Complete!
+[2019/07/04 13:16:45]ClickWait..ctor.Message:Complete!
+[2019/07/04 13:16:45]Script..ctor.Message:Commands[CurrentLabelName].Enqueue(Link)
+[2019/07/04 13:16:45]Link..ctor.Message:Complete!
+[2019/07/04 13:16:45]Script..ctor.Message:Commands[CurrentLabelName].Enqueue(Link)
+[2019/07/04 13:16:45]Link..ctor.Message:Complete!
+[2019/07/04 13:16:45]Script..ctor.Message:Commands[CurrentLabelName].Enqueue(LinkStop)
+[2019/07/04 13:16:45]Stop..ctor.Message:Complete!
+[2019/07/04 13:16:45]Script..ctor.ChangeCurrentLabelName:*select1 -> *select2
+[2019/07/04 13:16:45]Script..ctor.Message:Commands[CurrentLabelName].Enqueue(Wait)
+[2019/07/04 13:16:45]Wait..ctor.Message:Complete!
+[2019/07/04 13:16:45]Script..ctor.Message:Commands[CurrentLabelName].Enqueue(Display)
+[2019/07/04 13:16:45]DisplayText..ctor.Message:Complete!
+[2019/07/04 13:16:46]ClickWait..ctor.Message:Complete!
+[2019/07/04 13:16:46]Script..ctor.Message:Commands[CurrentLabelName].Enqueue(Link)
+[2019/07/04 13:16:46]Link..ctor.Message:Complete!
+[2019/07/04 13:16:46]Script..ctor.Message:Commands[CurrentLabelName].Enqueue(Link)
+[2019/07/04 13:16:46]Link..ctor.Message:Complete!
+[2019/07/04 13:16:46]Script..ctor.Message:Commands[CurrentLabelName].Enqueue(LinkStop)
+[2019/07/04 13:16:46]Stop..ctor.Message:Complete!
+[2019/07/04 13:16:46]Script..ctor.ChangeCurrentLabelName:*select2 -> *select3
+[2019/07/04 13:16:46]Script..ctor.Message:Commands[CurrentLabelName].Enqueue(Wait)
+[2019/07/04 13:16:46]Wait..ctor.Message:Complete!
+[2019/07/04 13:16:46]Script..ctor.Message:Commands[CurrentLabelName].Enqueue(Display)
+[2019/07/04 13:16:46]DisplayText..ctor.Message:Complete!
+[2019/07/04 13:16:46]ClickWait..ctor.Message:Complete!
+[2019/07/04 13:16:46]Script..ctor.Message:Commands[CurrentLabelName].Enqueue(Link)
+[2019/07/04 13:16:46]Link..ctor.Message:Complete!
+[2019/07/04 13:16:46]Script..ctor.Message:Commands[CurrentLabelName].Enqueue(Link)
+[2019/07/04 13:16:46]Link..ctor.Message:Complete!
+[2019/07/04 13:16:46]Script..ctor.Message:Commands[CurrentLabelName].Enqueue(LinkStop)
+[2019/07/04 13:16:46]Stop..ctor.Message:Complete!
+[2019/07/04 13:16:46]Script..ctor.ChangeCurrentLabelName:*select3 -> *select4
+[2019/07/04 13:16:46]Script..ctor.Message:Commands[CurrentLabelName].Enqueue(Wait)
+[2019/07/04 13:16:46]Wait..ctor.Message:Complete!
+[2019/07/04 13:16:46]Script..ctor.Message:Commands[CurrentLabelName].Enqueue(Display)
+[2019/07/04 13:16:46]DisplayText..ctor.Message:Complete!
+[2019/07/04 13:16:46]ClickWait..ctor.Message:Complete!
+[2019/07/04 13:16:46]Script..ctor.ChangeCurrentLabelName:*select4 -> *select5
+[2019/07/04 13:16:46]Script..ctor.Message:Commands[CurrentLabelName].Enqueue(Wait)
+[2019/07/04 13:16:46]Wait..ctor.Message:Complete!
+[2019/07/04 13:16:46]Script..ctor.Message:Commands[CurrentLabelName].Enqueue(Display)
+[2019/07/04 13:16:46]DisplayText..ctor.Message:Complete!
+[2019/07/04 13:16:46]ClickWait..ctor.Message:Complete!
+[2019/07/04 13:16:46]Script..ctor.Message:Complete!
+[2019/07/04 13:16:46]NovelForm..ctor.Message:Complete!
+[2019/07/04 13:16:46]NovelState..ctor.Message:Form = NovelForm, Text: ノベルゲームテスト
+[2019/07/04 13:16:46]NovelState..ctor.Message:ScriptData = Script
+[2019/07/04 13:16:46]NovelState..ctor.Message:Complete!
+[2019/07/04 13:16:46]NovelForm.Show.Message:Complete!
+[2019/07/04 13:16:46]Program:LoadTime = 1719
+[2019/07/04 13:16:46]ImageCommand.Execute.Message:return 1!
+[2019/07/04 13:16:46]Script.Execute.Message:isNext = 1.
+[2019/07/04 13:16:46]ImageCommand.Execute.Message:return 1!
+[2019/07/04 13:16:46]Script.Execute.Message:isNext = 1.
+[2019/07/04 13:16:46]WaitExecute.Message:15 msec!
+[2019/07/04 13:16:46]Script.Execute.Message:isNext = 1.
+[2019/07/04 13:16:46]NovelState.SetSpeechLabel.Message:Execute!
+[2019/07/04 13:16:47]NovelState.SetSpeechLabel.Message:Execute!
+[2019/07/04 13:16:47]NovelState.SetSpeechLabel.Message:Execute!
+[2019/07/04 13:16:47]NovelState.SetSpeechLabel.Message:Execute!
+[2019/07/04 13:16:47]NovelState.SetSpeechLabel.Message:Execute!
+[2019/07/04 13:16:47]NovelState.SetSpeechLabel.Message:Execute!
+[2019/07/04 13:16:48]NovelState.SetSpeechLabel.Message:Execute!
+[2019/07/04 13:16:48]NovelState.SetSpeechLabel.Message:Execute!
+[2019/07/04 13:16:48]NovelState.SetSpeechLabel.Message:Execute!
+[2019/07/04 13:16:48]NovelState.SetSpeechLabel.Message:Execute!
+[2019/07/04 13:16:48]NovelState.SetSpeechLabel.Message:Execute!
+[2019/07/04 13:16:49]NovelState.SetSpeechLabel.Message:Execute!
+[2019/07/04 13:16:49]NovelState.SetSpeechLabel.Message:Execute!
+[2019/07/04 13:16:49]NovelState.SetSpeechLabel.Message:Execute!
+[2019/07/04 13:16:49]NovelState.SetSpeechLabel.Message:Execute!
+[2019/07/04 13:16:49]NovelState.SetSpeechLabel.Message:Execute!
+[2019/07/04 13:16:50]DisplayText.Execute.Message:return 1!
+[2019/07/04 13:16:50]Script.Execute.Message:isNext = 1.
+[2019/07/04 13:16:55]ClickWait.Execute.Message:return 1.
+[2019/07/04 13:16:55]Script.Execute.Message:isNext = 1.
+[2019/07/04 13:16:55]ClearMessage.Execute.Message:Execute!
+[2019/07/04 13:16:55]NovelState.SetSpeechLabel.Message:Execute!
+[2019/07/04 13:16:55]Script.Execute.Message:isNext = 1.
+[2019/07/04 13:16:55]WaitExecute.Message:15 msec!
+[2019/07/04 13:16:55]Script.Execute.Message:isNext = 1.
+[2019/07/04 13:16:55]NovelState.SetCharacter.Message:Execute!
+[2019/07/04 13:16:55]ImageCommand.Execute.Message:return 1!
+[2019/07/04 13:16:55]Script.Execute.Message:isNext = 1.
+[2019/07/04 13:16:55]NovelState.SetSpeechLabel.Message:Execute!
+[2019/07/04 13:16:55]NovelState.SetSpeechLabel.Message:Execute!
+[2019/07/04 13:16:56]NovelState.SetSpeechLabel.Message:Execute!
+[2019/07/04 13:16:56]NovelState.SetSpeechLabel.Message:Execute!
+[2019/07/04 13:16:56]DisplayText.Execute.Message:return 1!
+[2019/07/04 13:16:56]Script.Execute.Message:isNext = 1.
+[2019/07/04 13:16:57]ClickWait.Execute.Message:return 1.
+[2019/07/04 13:16:57]Script.Execute.Message:isNext = 1.
+[2019/07/04 13:16:57]ClearMessage.Execute.Message:Execute!
+[2019/07/04 13:16:57]NovelState.SetSpeechLabel.Message:Execute!
+[2019/07/04 13:16:57]Script.Execute.Message:isNext = 1.
+[2019/07/04 13:16:57]NovelState.SetCharacter.Message:Execute!
+[2019/07/04 13:16:57]ImageCommand.Execute.Message:return 1!
+[2019/07/04 13:16:57]Script.Execute.Message:isNext = 1.
+[2019/07/04 13:16:57]NovelState.SetSpeechLabel.Message:Execute!
+[2019/07/04 13:16:57]NovelState.SetSpeechLabel.Message:Execute!
+[2019/07/04 13:16:57]NovelState.SetSpeechLabel.Message:Execute!
+[2019/07/04 13:16:57]NovelState.SetSpeechLabel.Message:Execute!
+[2019/07/04 13:16:57]DisplayText.Execute.Message:return 1!
+[2019/07/04 13:16:57]Script.Execute.Message:isNext = 1.
+[2019/07/04 13:16:58]ClickWait.Execute.Message:return 1.
+[2019/07/04 13:16:58]Script.Execute.Message:isNext = 1.
+[2019/07/04 13:16:58]NovelState.SetCharacter.Message:Execute!
+[2019/07/04 13:16:58]ImageCommand.Execute.Message:return 1!
+[2019/07/04 13:16:58]Script.Execute.Message:isNext = 1.
+[2019/07/04 13:16:58]NovelState.SetSpeechLabel.Message:Execute!
+[2019/07/04 13:16:58]NovelState.SetSpeechLabel.Message:Execute!
+[2019/07/04 13:16:59]NovelState.SetSpeechLabel.Message:Execute!
+[2019/07/04 13:16:59]NovelState.SetSpeechLabel.Message:Execute!
+[2019/07/04 13:16:59]NovelState.SetSpeechLabel.Message:Execute!
+[2019/07/04 13:16:59]DisplayText.Execute.Message:return 1!
+[2019/07/04 13:16:59]Script.Execute.Message:isNext = 1.
+[2019/07/04 13:17:00]ClickWait.Execute.Message:return 1.
+[2019/07/04 13:17:00]Script.Execute.Message:isNext = 1.
+[2019/07/04 13:17:00]ClearMessage.Execute.Message:Execute!
+[2019/07/04 13:17:00]NovelState.SetSpeechLabel.Message:Execute!
+[2019/07/04 13:17:00]Script.Execute.Message:isNext = 1.
+[2019/07/04 13:17:00]Transiton.Execute.Message:State and from are null!
+[2019/07/04 13:17:02]Transiton.Execute.Message:return 1.
+[2019/07/04 13:17:02]Script.Execute.Message:isNext = 1.
+[2019/07/04 13:17:02]WaitExecute.Message:15 msec!
+[2019/07/04 13:17:02]Script.Execute.Message:isNext = 1.
+[2019/07/04 13:17:02]NovelState.SetSpeechLabel.Message:Execute!
+[2019/07/04 13:17:02]NovelState.SetSpeechLabel.Message:Execute!
+[2019/07/04 13:17:03]NovelState.SetSpeechLabel.Message:Execute!
+[2019/07/04 13:17:03]NovelState.SetSpeechLabel.Message:Execute!
+[2019/07/04 13:17:03]DisplayText.Execute.Message:return 1!
+[2019/07/04 13:17:03]Script.Execute.Message:isNext = 1.
+[2019/07/04 13:17:04]ClickWait.Execute.Message:return 1.
+[2019/07/04 13:17:04]Script.Execute.Message:isNext = 1.
+[2019/07/04 13:17:04]ClearMessage.Execute.Message:Execute!
+[2019/07/04 13:17:04]NovelState.SetSpeechLabel.Message:Execute!
+[2019/07/04 13:17:04]Script.Execute.Message:isNext = 1.
+[2019/07/04 13:17:04]Link.Execute:Target=*select1,Value="選択肢1へ"
+[2019/07/04 13:17:04]NovelState.SetChoiceLabel:Execute!
+[2019/07/04 13:17:04]Script.Execute.Message:isNext = 1.
+[2019/07/04 13:17:04]Link.Execute:Target=*select2,Value="選択肢2へ"
+[2019/07/04 13:17:04]NovelState.SetChoiceLabel:Execute!
+[2019/07/04 13:17:04]Script.Execute.Message:isNext = 1.
+[2019/07/04 13:17:04]Link.Execute:Target=*select3,Value="選択肢3へ"
+[2019/07/04 13:17:04]NovelState.SetChoiceLabel:Execute!
+[2019/07/04 13:17:04]Script.Execute.Message:isNext = 1.
+[2019/07/04 13:17:05]NovelState.OnKeyDown:ChoiceLabelIndex = 1
+[2019/07/04 13:17:05]NovelState.OnKeyDown:ChoiceLabelIndex = 2
+[2019/07/04 13:17:06]NovelState.OnKeyDown:ChoiceLabelIndex = 1
+[2019/07/04 13:17:06]NovelState.OnKeyDown:ChoiceLabelIndex = 0
+[2019/07/04 13:17:06]NovelState.OnKeyDown:ChoiceLabelIndex = 1
+[2019/07/04 13:17:06]NovelState.OnKeyDown:ChoiceLabelIndex = 2
+[2019/07/04 13:17:16]NovelState.OnKeyDown:ChoiceLabelIndex = 1
+[2019/07/04 13:17:18]NovelState.OnKeyDown:ChoiceLabelIndex = 2
+[2019/07/04 13:17:18]NovelState.OnKeyDown:ChoiceLabelIndex = 0
+[2019/07/04 13:17:18]NovelState.OnKeyDown:ChoiceLabelIndex = 1
+[2019/07/04 13:17:18]NovelState.OnKeyDown:ChoiceLabelIndex = 2
+[2019/07/04 13:17:19]NovelState.OnKeyDown:ChoiceLabelIndex = 0
+[2019/07/04 13:17:19]NovelState.OnKeyDown:ChoiceLabelIndex = 2
+[2019/07/04 13:17:20]NovelState.OnKeyDown:ChoiceLabelIndex = 0
+[2019/07/04 13:17:21]Stop.Execute.Message:CurrentLabelName = *select1
+[2019/07/04 13:17:21]Script.Execute.Message:isNext = 1.
+[2019/07/04 13:17:21]NovelState.SetSpeechLabel.Message:Execute!
+[2019/07/04 13:17:22]NovelState.SetSpeechLabel.Message:Execute!
+[2019/07/04 13:17:22]NovelState.SetSpeechLabel.Message:Execute!
+[2019/07/04 13:17:22]NovelState.SetSpeechLabel.Message:Execute!
+[2019/07/04 13:17:22]NovelState.SetSpeechLabel.Message:Execute!
+[2019/07/04 13:17:22]NovelState.SetSpeechLabel.Message:Execute!
+[2019/07/04 13:17:23]NovelState.SetSpeechLabel.Message:Execute!
+[2019/07/04 13:17:23]DisplayText.Execute.Message:return 1!
+[2019/07/04 13:17:23]Script.Execute.Message:isNext = 1.
+[2019/07/04 13:17:28]ClickWait.Execute.Message:return 1.
+[2019/07/04 13:17:29]Script.Execute.Message:isNext = 1.
+[2019/07/04 13:17:29]Link.Execute:Target=*select4,Value="選択肢4へ"
+[2019/07/04 13:17:29]NovelState.SetChoiceLabel:Execute!
+[2019/07/04 13:17:29]Script.Execute.Message:isNext = 1.
+[2019/07/04 13:17:29]Link.Execute:Target=*select5,Value="選択肢5へ"
+[2019/07/04 13:17:29]NovelState.SetChoiceLabel:Execute!
+[2019/07/04 13:17:29]Script.Execute.Message:isNext = 1.
+[2019/07/04 13:17:29]NovelState.OnKeyDown:ChoiceLabelIndex = 1
+[2019/07/04 13:17:30]NovelState.OnKeyDown:ChoiceLabelIndex = 0
+[2019/07/04 13:17:30]NovelState.OnKeyDown:ChoiceLabelIndex = 1
+[2019/07/04 13:17:31]Stop.Execute.Message:CurrentLabelName = *select5
+[2019/07/04 13:17:31]Script.Execute.Message:isNext = 1.
+[2019/07/04 13:17:31]NovelState.SetSpeechLabel.Message:Execute!
+[2019/07/04 13:17:31]NovelState.SetSpeechLabel.Message:Execute!
+[2019/07/04 13:17:31]NovelState.SetSpeechLabel.Message:Execute!
+[2019/07/04 13:17:31]NovelState.SetSpeechLabel.Message:Execute!
+[2019/07/04 13:17:31]DisplayText.Execute.Message:return 1!
+[2019/07/04 13:17:31]Script.Execute.Message:isNext = 1.
+[2019/07/04 13:17:33]ClickWait.Execute.Message:return 1.
+[2019/07/04 13:17:33]Script.Execute.Message:isNext = 1.
+[2019/07/04 13:17:35]NovelState.OnKeyDown:Key = ControlKey
+[2019/07/04 13:17:35]NovelState.OnKeyDown:Key = ControlKey
+[2019/07/04 13:17:35]NovelState.OnKeyDown:Key = ControlKey
+[2019/07/04 13:17:37]Program:End!
