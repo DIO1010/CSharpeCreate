@@ -4,8 +4,9 @@ using System.Windows.Forms;
 
 public class GameForm : Form
 {
-    private Panel prePanel;
-    private Panel backPanel;
+    private PictureBox drawImage;
+    private State currentState;
+
     private enum Const
     {
         WIDTH = 800,
@@ -21,8 +22,7 @@ public class GameForm : Form
         Text = "タイトル(仮)";
         this.Load += new EventHandler(this.GameForm_Load);
 
-        prePanel = Utility.PanelInit(false);
-        backPanel = Utility.PanelInit(true);
+        drawImage = Utility.PictureBoxInit();
     }
 
     public new void Show()
@@ -32,9 +32,12 @@ public class GameForm : Form
 
     public new void Update()
     {
+        drawImage.BackgroundImage = currentState.GetDrawImage();
     }
 
     private void GameForm_Load(object sender,EventArgs e)
     {
+        currentState = new NovelState(this,this.Width,this.Height);
+        this.Controls.Add(drawImage);
     }
 }

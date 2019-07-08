@@ -5,6 +5,12 @@ using System.Windows.Forms;
 
 public class Utility
 {
+    public enum Const{
+        StartLeft = 0,
+        StartTop = 0,
+        WIDTH = 800,
+        HEIGHT = 600
+    }
     public static void WriteStart(){
         StreamWriter sw = WriteInit();
         string write = "*--------------------\"";
@@ -35,13 +41,26 @@ public class Utility
         return new StreamWriter(System.DateTime.Now.ToString("yyyy_MM_dd") + "_log.txt",true,encode);
     }
 
-    public static Panel PanelInit(bool isVisible)
+    public static string GetImagePath()
+    {
+        return "./Image/";
+    }
+
+    public static Panel PanelInit()
     {
         Panel panel = new Panel();
         panel.Location = new Point((int)Const.StartLeft,(int)Const.StartTop);
         panel.Size = new Size((int)Const.WIDTH,(int)Const.HEIGHT);
-        panel.Visible = isVisible;
 
         return panel;
+    }
+
+    public static PictureBox PictureBoxInit()
+    {
+        PictureBox imageBox = new PictureBox();
+        imageBox.Location = new Point((int)Const.StartLeft,(int)Const.StartTop);
+        imageBox.Size = new Size((int)Const.WIDTH,(int)Const.HEIGHT);
+
+        return imageBox;
     }
 }

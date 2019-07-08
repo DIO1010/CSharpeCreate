@@ -38,6 +38,7 @@
 |NovelGame|フォルダ|Font|フォントファイルを格納したディレクトリ。|
 |NovelGame|ファイル|GameForm.cs|Fromを継承したクラス。実際のデザインはStateクラスで実装。|
 |NovelGame|フォルダ|Image|画像ファイルを格納したディレクトリ。|
+|NovelGame|ファイル|NovelStateLayerManagement.cs|Layer抽象クラスとそれを継承したクラスを実装。さらに、それを管理するクラスを実装。|
 |NovelGame|ファイル|Program.cs|main関数を含んだクラス。|
 |NovelGame|ファイル|Program.exe|実行ファイル。|
 |NovelGame|ファイル|ReadMe.txt|メモ。特にレビューに関係ない。読む必要なし。|
