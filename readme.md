@@ -92,7 +92,7 @@
 	│	│	├SettingState.cs  
 	│	│	├State.cs  
 	│	│	└TitleState.cs  
-	│	│
+	│	│  
 	│	├/Utilities（その他部品。）  
 	│	│	├Config.cs  
 	│	│	├ControlReturn.cs  
