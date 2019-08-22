@@ -104,7 +104,7 @@
 	│	│	├PointF.cs  
 	│	│	├String.cs  
 	│	│	└TransMethod.cs  
-	│	│
+	│	│  
 	│	└/Xml（Xmlもどき。）  
 	│		└XmlMachine.cs  
 	│  
