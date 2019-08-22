@@ -1,49 +1,124 @@
 本ディレクトリ構造
 
 ./CSharpeCreate  
-    ├/Novel+Script  
-    │　…とりあえず、うごくものを作るために制作したディレクトリ  
-    └NovelGame  
-       …可読性をよくしようと努力したディレクトリ  
-        ただ、絵を表示させるだけ  
-
-ソースコードの概要を以下に示す  
-
-|所属ディレクトリ名|属性|名前|概要|
-|:--:|:--:|:--:|:---|
-|Novel+Script|ファイル|Character.cs|登場人物のクラス。|
-|Novel+Script|ファイル|ClearMessage.cs|Commandを継承したメッセージ部分クリアするクラス。|
-|Novel+Script|ファイル|ClickWait.cs|Commandを継承したクリックを待機するクラス。|
-|Novel+Script|ファイル|Command.cs|Commandの抽象クラス。|
-|Novel+Script|ファイル|DataStorage.cs|グローバル変数的扱いを行うクラス。(要修正)|
-|Novel+Script|ファイル|DisplayText.cs|Commandを継承したメッセージ部分の文字を表示するクラス。|
-|Novel+Script|フォルダ|Font|フォントが入ったディレクトリ。|
-|Novel+Script|フォルダ|Image|画像、アイコンファイルが格納されたディレクトリ。|
-|Novel+Script|ファイル|ImageCommand.cs|Commandを継承した画像を表示させるクラス。|
-|Novel+Script|ファイル|Link.cs|Commandを継承した選択肢に使う(targetで指定されたラベルに飛ぶ)クラス。|
-|Novel+Script|ファイル|log.txt|起動するごとに内容を上書きしたログのテキストファイル。|
-|Novel+Script|ファイル|NovelForm.cs|Formを継承したノベルのフォームを設定しているクラス。|
-|Novel+Script|ファイル|NovelState.cs|Stateを継承し、実際はここでノベルのデザインを設定しているクラス。|
-|Novel+Script|ファイル|Program.cs|main関数を含んだクラス。|
-|Novel+Script|ファイル|Program.exe|実行ファイル。|
-|Novel+Script|ファイル|readme.txt|メモ書き程度に記したメモ。確認しなくていい。|
-|Novel+Script|フォルダ|Script|Script(.fnms:オリジナルテキストファイル拡張子)ファイルを格納したディレクトリ。|
-|Novel+Script|ファイル|Script.cs|Scriptの内容に応じたFIFOを実装したクラス。|
-|Novel+Script|ファイル|State.cs|Stateの抽象クラス。|
-|Novel+Script|ファイル|StateManagement.cs|Stateを継承したクラスを管理するクラス。|
-|Novel+Script|ファイル|Stop.cs|Commandを継承したLinkの後に必ず書く必要がある停止クラス。|
-|Novel+Script|ファイル|Transition.cs|Commandを継承したトランジョン(画像を変化させる)クラス。|
-|Novel+Script|ファイル|Wait.cs|Commandを継承した一定時間待つクラス。|
-|NovelGame|ファイル|2019_07_05_log.txt|2019/07/05に作成されたログファイル。(日付が変わるごとにファイルが新しく作成される。)|
-|NovelGame|フォルダ|Font|フォントファイルを格納したディレクトリ。|
-|NovelGame|ファイル|GameForm.cs|Fromを継承したクラス。実際のデザインはStateクラスで実装。|
-|NovelGame|フォルダ|Image|画像ファイルを格納したディレクトリ。|
-|NovelGame|ファイル|NovelStateLayerManagement.cs|Layer抽象クラスとそれを継承したクラスを実装。さらに、それを管理するクラスを実装。|
-|NovelGame|ファイル|Program.cs|main関数を含んだクラス。|
-|NovelGame|ファイル|Program.exe|実行ファイル。|
-|NovelGame|ファイル|ReadMe.txt|メモ。特にレビューに関係ない。読む必要なし。|
-|NovelGame|ファイル|State.cs|State抽象クラスとそれを継承した具体的なクラスを実装。|
-|NovelGame|ファイル|Utility.cs|あると便利なSingletonで実装されたクラス。|
-
-
-以上。
+	│  
+	├/Novel+Script  
+	│	…とりあえず、うごくものを作るために制作したディレクトリ  
+	│  
+	├/NovelGame  
+	│	…可読性をよくしようと努力したディレクトリ  
+	│	…疎結合になっていないため、何とかしたい！  
+	│  
+	├*.cs  
+	│	…ignoreし忘れた。見なくても大丈夫。  
+	│  
+	├*.exe  
+	│	…ignoreし忘れた。見なくても大丈夫。  
+	│  
+	└リファクタリング.pdf  
+		…ignoreし忘れた。  
+  
+以下にNovelGameディレクトリの構造示す。（内容一部略）  
+  
+./NobelGame  
+	│  
+	├/Config  
+	│	└*（ファイル名省略）  
+	│  
+	├/Font  
+	│	└*（ファイル名省略）  
+	│  
+	├/Image  
+	│	└*（ファイル名省略）  
+	│  
+	├/Script  
+	│	└*（ファイル名省略）  
+	│  
+	├/Src（ソースコードの部品。）  
+	│	├/Commands（Script処理に必要な部品）  
+	│	│	├ChangeImage.cs  
+	│	│	├Command.cs  
+	│	│	├EndQueue.cs　（未使用）  
+	│	│	├JampScript.cs  
+	│	│	├Link.cs  
+	│	│	├LinkStop.cs  
+	│	│	├Message.cs  
+	│	│	├MessageClear.cs  
+	│	│	├Transition.cs  
+	│	│	└Wait.cs  
+	│	│  
+	│	├/Const（定数の役割を逸脱。TODO。）  
+	│	│	├Background.cs  
+	│	│	├Button.cs  
+	│	│	├Character.cs  
+	│	│	├CheckBox.cs  
+	│	│	├Choice.cs  
+	│	│	├DebugItems.cs  
+	│	│	├DebugMenu.cs  
+	│	│	├Image.cs  
+	│	│	├Init.cs  
+	│	│	├Label.cs  
+	│	│	├Message.cs  
+	│	│	├MessageFrame.cs  
+	│	│	├Slider.cs  
+	│	│	└Window.cs  
+	│	│  
+	│	├/Debug（デバッグ画面表示関連）  
+	│	│	├FrameRate.cs  
+	│	│	├Items.cs  
+	│	│	└Menu.cs  
+	│	│  
+	│	├/LayerManager（各状態のレイヤー管理。ここが問題。）  
+	│	│	├GamelLayerManager.cs  
+	│	│	├SettingLayerManager.cs  
+	│	│	└TitleLayerManager.cs  
+	│	│  
+	│	├/Layers（レイヤーの部品。）  
+	│	│	├BackgroundLayer.cs  
+	│	│	├ButtonLayer.cs  
+	│	│	├CharacterLayer.cs  
+	│	│	├CheckBoxLayer.cs  
+	│	│	├ChoiceLayer.cs  
+	│	│	├DebugItemsLayer.cs  
+	│	│	├DebugMenuLayer.cs  
+	│	│	├LabelLayer.cs  
+	│	│	├Layer.cs  
+	│	│	├MessageFrameLayer.cs  
+	│	│	├MessageTextLayer.cs  
+	│	│	└SliderLayer.cs  
+	│	│  
+	│	├/States（状態の部品。）  
+	│	│	├NovelState.cs  
+	│	│	├SettingState.cs  
+	│	│	├State.cs  
+	│	│	└TitleState.cs  
+	│	│  
+	│	├/Utilities（その他部品。）  
+	│	│	├Config.cs  
+	│	│	├ControlReturn.cs  
+	│	│	├Format.cs  
+	│	│	├Initializatio.cs  
+	│	│	├Keybord.cs  
+	│	│	├Logger.cs  
+	│	│	├MousePoint.cs  
+	│	│	├PointF.cs  
+	│	│	├String.cs  
+	│	│	└TransMethod.cs  
+	│	│  
+	│	└/Xml（Xmlもどき。）  
+	│		└XmlMachine.cs  
+	│  
+	├/Xml  
+	│	└*（ファイル名省略）  
+	│  
+	├GameForm.cs  
+	├Program.cs  
+	├Program.exe  
+	├ScriptMachine.cs（Scriptを管理する。）  
+	├StateManage.cs  
+	├compile.bat（Windowsでのコンパイル）  
+	├debug.bat（Windowsでデバッグ画面を表示させることが可能。）  
+	├memo.txt（日記的なサムシング。）  
+	└release.bat（Windowsでデバッグ画面を非表示にする。）  
+  
+以上。  
