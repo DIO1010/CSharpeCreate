@@ -5,18 +5,9 @@
 	├/Novel+Script  
 	│	…とりあえず、うごくものを作るために制作したディレクトリ  
 	│  
-	├/NovelGame  
-	│	…可読性をよくしようと努力したディレクトリ  
-	│	…疎結合になっていないため、何とかしたい！  
-	│  
-	├*.cs  
-	│	…ignoreし忘れた。見なくても大丈夫。  
-	│  
-	├*.exe  
-	│	…ignoreし忘れた。見なくても大丈夫。  
-	│  
-	└リファクタリング.pdf  
-		…ignoreし忘れた。  
+	└/NovelGame  
+		…可読性をよくしようと努力したディレクトリ  
+		…疎結合になっていないため、何とかしたい！  	
   
 以下にNovelGameディレクトリの構造示す。（内容一部略）  
   
@@ -111,14 +102,18 @@
 	├/Xml  
 	│	└*（ファイル名省略）  
 	│  
+	├compile.bat（コンパイルを自動化）  
+	├debuglog.bat  （起動を自動化）
 	├GameForm.cs  
+	├memo.txt（日記的なサムシング）  
+	├NovelGame.csproj（dotnetのプロジェクト）  
+	├NovelGame.exe  
+	├NovelGame.pdb  
 	├Program.cs  
 	├Program.exe  
+	├release.bat  （起動を自動化）
+	├releaselog.bat  （起動を自動化）
 	├ScriptMachine.cs（Scriptを管理する。）  
-	├StateManage.cs  
-	├compile.bat（Windowsでのコンパイル）  
-	├debug.bat（Windowsでデバッグ画面を表示させることが可能。）  
-	├memo.txt（日記的なサムシング。）  
-	└release.bat（Windowsでデバッグ画面を非表示にする。）  
+	└StateManage.cs （状態を管理する。）
   
 以上。  
