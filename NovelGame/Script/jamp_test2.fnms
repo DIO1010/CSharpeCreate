@@ -1,0 +1,53 @@
+*start
+<wait, time = 500>
+<image, storage="sample4", layer=0>
+<trans, storage="sample3", method=crossfade, from=top, time=1500>
+<wait, time = 500>
+これはjamp_test2です。
+<l>
+改行します。<r>
+クリック待機します。
+<l>
+<link, target=*select1, value="選択肢1へ">
+<link, target=*select2, value="選択肢2へ">
+<link, target=*select3, value="選択肢3へ">
+<linkstop>
+
+*select1
+<wait, time = 500>
+選択肢1へ移動しました。<r>
+クリック待機します。
+<l>
+<link, target=*select4, value="選択肢4へ">
+<link, target=*select5, value="選択肢5へ">
+<linkstop>
+
+*select2
+<wait ,time = 500>
+選択肢2へ移動しました。<r>
+クリック待機します。
+<l>
+<link ,target=*select4 ,value="選択肢4へ">
+<link ,target=*select5 ,value="選択肢5へ">
+<linkstop>
+
+*select3
+<wait, time = 500>
+選択肢3へ移動しました。<r>
+クリック待機します。
+<l>
+<link, target=*select4, value="選択肢4へ">
+<link, target=*select5, value="選択肢5へ">
+<linkstop>
+
+*select4
+<wait, time = 500>
+選択肢4へ移動しました。<r>
+クリック待機します。
+<l>
+
+*select5
+<wait, time = 500>
+選択肢5へ移動しました。<r>
+クリック待機します。
+<l>

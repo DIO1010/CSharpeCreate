@@ -1,0 +1,10 @@
+;背景
+<Background:name=BackgroundLayer>
+;キャラクター
+<Foreground:name=CharacterLayer0,left=100,top=100>
+<Foreground:name=CharacterLayer1,left=100,top=100>
+<Foreground:name=CharacterLayer2,left=100,top=100>
+;セリフ台&セリフ
+<Message:name=MessageLayer,left=10,top=300>
+;ボタンテスト
+<Button:name=ButtonLayer1,storage=setting_sample1,left=660,top=400,method=setting>

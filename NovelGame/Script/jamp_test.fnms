@@ -1,0 +1,7 @@
+*start
+<wait, time = 500>
+<image, storage="sample4", layer=0>
+遷移しました！<r>
+いいね！
+<l>
+<jamp, target=jamp_test2.fnms>

@@ -1,0 +1,7 @@
+;背景
+<Background:name=BackgroundLayer>
+;タイトル
+<Label:name=LabelLayer,value=TitleTestText,left=310,top=150>
+;testボタン
+<Button:name=ButtonLayer1,storage=gamestart_sample,left=310,top=250,method=gamestart>
+<Button:name=ButtonLayer2,storage=setting_sample,left=310,top=350,method=setting>

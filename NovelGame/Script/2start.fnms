@@ -1,0 +1,78 @@
+<image, storage="sample3", layer=base>
+<image, storage="textframe", layer=3>
+*start
+<wait, time = 500>
+<image, storage="sample4", layer=0>
+<wait, time = 500>
+[test]
+改行します。<r>
+Scroll上から。<r>
+クリック待機します。
+<l>
+;<trans, storage="sample2", method=crossfade, time=1500>
+<trans, storage="sample2", method=scroll, time=1500>
+改行します。<r>
+Scroll下から。<r>
+クリック待機します。
+<l>
+<trans, storage="sample3", method=scroll, from=bottom,time=1500>
+改行します。<r>
+Scroll左から。<r>
+クリック待機します。
+<l>
+<trans, storage="sample2", method=scroll, from=left,time=1500>
+改行します。<r>
+Scroll右から。<r>
+クリック待機します。
+<l>
+<trans, storage="sample3", method=scroll, from=right,time=1500>
+改行します。
+クリック待機します。
+<l>
+長文失礼します。長文失礼します。長文失礼します。長文失礼します。長文失礼します。長文失礼します。長文失礼します。長文失礼します。長文失礼します。長文失礼します。
+<l>
+<link, target=*select1, value="選択肢1へ">
+<link, target=*select2, value="選択肢2へ">
+<link, target=*select3, value="選択肢3へ">
+<linkstop>
+
+*select1
+<wait, time = 500>
+選択肢1へ移動しました。<r>
+クリック待機します。
+<l>
+<link, target=*select4, value="選択肢4へ">
+<link, target=*select5, value="選択肢5へ">
+<linkstop>
+
+*select2
+<wait ,time = 500>
+選択肢2へ移動しました。<r>
+クリック待機します。
+<l>
+<link ,target=*select4 ,value="選択肢4へ">
+<link ,target=*select5 ,value="選択肢5へ">
+<linkstop>
+
+*select3
+<wait, time = 500>
+選択肢3へ移動しました。<r>
+クリック待機します。
+<l>
+<link, target=*select4, value="選択肢4へ">
+<link, target=*select5, value="選択肢5へ">
+<linkstop>
+
+*select4
+<wait, time = 500>
+選択肢4へ移動しました。<r>
+クリック待機します。
+<l>
+<jamp,target=jamp_test.fnms>
+
+*select5
+<wait, time = 500>
+選択肢5へ移動しました。<r>
+クリック待機します。
+<l>
+<jamp, target=jamp_test.fnms>

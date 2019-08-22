@@ -1,0 +1,10 @@
+;背景
+<Background:name=BackgroundLayer>
+;testチェックボックス
+<CheckBoxList:name=CheckBoxListLayer1,storage=check_sample,left=310,top=120,value=800x600,value=1000x750>
+;testチェックボックス2
+;<CheckBoxList:name=CheckBoxListLayer2,storage=check_sample,left=400,top=120,value=name1,value=name2,value=name3>
+;testボタン
+<Button:name=ButtonLayer1,storage=back_sample,left=310,top=350,method=back>
+;testスライダー
+<Slider:name=SliderLayer1,storage=slider_sample,left=100,top=50,size=5>
