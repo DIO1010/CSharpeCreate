@@ -2,3 +2,5 @@
 /Test/
 *.BAK
 *.pdf
+*.cs
+*.exe

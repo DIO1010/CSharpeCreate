@@ -1,5 +1,10 @@
 /obj/
 /bin/
+<<<<<<< HEAD
 /Font/
 /.tmp.drivedownload/
 /Log/
+=======
+/.tmp.drivedownload/
+/Font/
+>>>>>>> fcaf286901e7989ee0eb782aeae614258ce617e5
