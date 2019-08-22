@@ -8,36 +8,22 @@ namespace Const
 {
     public class DebugMenu
     {
-        private static int        width_       = 300; 
-        private static int        height_      = 600; 
-        private static int        left_        = 500; 
-        private static int        top_         = 0; 
-        private static int        padding_     = 10; 
-        private static int        itemWidth_   = 300;
-        private static int        itemHeight_  = 24;
-        private static int        itemLeft_    = 510;
-        private static int        itemTop_     = 0;
-        private static int        itemPadding_ = 6;
-        private static int        fontSize_    = 20;
-        private static int        checkSize_   = 12;
-        private static SolidBrush brushBack_   = new SolidBrush(Color.FromArgb(255,  0,  0,  0));
+        private static int width_ = (int)(300*Config.Instance.Width); 
+        private static int height_ = (int)(600*Config.Instance.Height); 
+        private static int left_ = (int)(500*Config.Instance.Width); 
+        private static int top_ = (int)(0*Config.Instance.Height); 
+        private static int padding_ = (int)(10*Config.Instance.Height); 
+        private static int itemWidth_ = (int)(WIDTH);
+        private static int itemHeight_ = (int)(24*Config.Instance.Height);
+        private static int itemLeft_ = (int)(LEFT+PADDING);
+        private static int itemTop_ = (int)((FONT_SIZE+ITEM_PADDING)+1*Config.Instance.Height);
+        private static int itemPadding_ = (int)(6*Config.Instance.Height);
+        private static int fontSize_ = (int)(20*Config.Instance.Height);
+        private static int checkSize_ = (int)(12*Config.Instance.Height);
+        private static SolidBrush brushBack_ = new SolidBrush(Color.FromArgb(255,  0,  0,  0));
         private static SolidBrush brushFalse_  = new SolidBrush(Color.FromArgb(100,200,200,200));
         private static SolidBrush brushSelect_ = new SolidBrush(Color.FromArgb(100,  0,255,  0));
-        private static SolidBrush brushTrue_   = new SolidBrush(Color.FromArgb(100,255,  0,255));
-        // private static int itemWidth_;
-        // private static int itemHeight_;
-        // private static int itemLeft_;
-        // private static int itemTop_;
-        // private static int itemPadding_;
-
-        // public DebugMenu()
-        // {
-        //     itemWidth_ = 375;
-        //     itemHeight_ = 31;
-        //     itemLeft_ = 637;
-        //     itemTop_ = 33;
-        //     itemPadding_ = 7;
-        // }
+        private static SolidBrush brushTrue_ = new SolidBrush(Color.FromArgb(100,255,  0,255));
 
         public static int WIDTH
         {
@@ -182,41 +168,19 @@ namespace Const
 
         public static void UpdateParam()
         {
-            float t = 300*Config.Instance.Width;
-            width_ = (int)t;
-
-            t = 600*Config.Instance.Height;
-            height_ = (int)t;
-
-            t = 500*Config.Instance.Width;
-            left_ = (int)t;
-
-            t = 0*Config.Instance.Height;
-            top_ = (int)t;
-
-            t = 10*Config.Instance.Height;
-            padding_ = (int)t;
-
-            t = WIDTH;
-            itemWidth_ = (int)t;
-
-            t = 24*Config.Instance.Height;
-            itemHeight_ = (int)t;
-
-            t = LEFT+PADDING;
-            itemLeft_ = (int)t;
-
-            t = (FONT_SIZE+ITEM_PADDING)+1*Config.Instance.Height;
-            itemTop_ = (int)t;
-
-            t = 6*Config.Instance.Height;
-            itemPadding_ = (int)t;
-
-            t = 20*Config.Instance.Height;
-            fontSize_ = (int)t;
-
-            t = 12*Config.Instance.Height;
-            checkSize_ = (int)t;
+            width_ = (int)(300*Config.Instance.Width); 
+            height_ = (int)(600*Config.Instance.Height); 
+            left_ = (int)(500*Config.Instance.Width); 
+            top_ = (int)(0*Config.Instance.Height); 
+            padding_ = (int)(10*Config.Instance.Height); 
+            itemWidth_ = (int)(WIDTH);
+            itemHeight_ = (int)(24*Config.Instance.Height);
+            itemLeft_ = (int)(LEFT+PADDING);
+            itemTop_ = (int)((FONT_SIZE+ITEM_PADDING)+1*Config.Instance.Height);
+            itemPadding_ = (int)(6*Config.Instance.Height);
+            fontSize_ = (int)(20*Config.Instance.Height);
+            checkSize_ = (int)(12*Config.Instance.Height);
         }
+
     }
 }

@@ -6,10 +6,21 @@ namespace Const
     public class Label
     {
         private static string name_ = "LabelLayer";
-        private static int    width_    = 800;
-        private static int    height_   = 600;
-        private static int    fontSize_ = 20;
+        private static int width_ = (int)(800*Config.Instance.Width);
+        private static int height_ = (int)(600*Config.Instance.Height);
+        private static int fontSize_ = (int)(20*Config.Instance.Height);
 
+        // public Label()
+        // {
+        //     float t = 800*Config.Instance.Width;
+        //     width_ = (int)t;
+
+        //     t = 600*Config.Instance.Height;
+        //     height_ = (int)t;
+
+        //     t = 20*Config.Instance.Height;
+        //     fontSize_ = (int)t;
+        // }
 
         public static string NAME
         {
@@ -57,14 +68,12 @@ namespace Const
 
         public static void UpdateParam()
         {
-            float t = 800*Config.Instance.Width;
-            width_ = (int)t;
+            width_ = (int)(800*Config.Instance.Width);
 
-            t = 600*Config.Instance.Height;
-            height_ = (int)t;
-
-            t = 20*Config.Instance.Height;
-            fontSize_ = (int)t;
+            height_ = (int)(600*Config.Instance.Height);
+            
+            fontSize_ = (int)(20*Config.Instance.Height);
         }
+
     }
 }

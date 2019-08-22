@@ -1,2 +1,2 @@
 call compile.bat -r
-NovelGame.exe
+NovelGame.exe -l

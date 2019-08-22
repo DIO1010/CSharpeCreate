@@ -157,7 +157,7 @@ namespace Layers
 
         public override string ToString()
         {
-            return System.String.Format("ChoiceLayer:[IsDraw:{0}],[IsSelect:{1}],[Id:{2}]",IsDraw,IsSelect,id_);
+            return ("ChoiceLayer:[IsDraw:"+IsDraw+"],[IsSelect:"+IsSelect+"],[Id:"+id_+"]");
         }
 
         private bool MouseHover()

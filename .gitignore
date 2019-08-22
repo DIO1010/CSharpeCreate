@@ -1,5 +1,7 @@
 /FujinomuraScriptEditer/
 /Test/
 /NovelGame/Font/
+/bin/
+/obj/
 *.BAK
-/リファクタ.pdf
+*.pdf

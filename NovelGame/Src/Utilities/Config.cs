@@ -98,7 +98,7 @@ namespace Utilities
 
         public override string ToString()
         {
-            return System.String.Format("Config:[WidthTime:{WIDTH_INFO}],[HeightTime:{1}],[TextSpeed:{2}]",Width,Height,TextSpeed);
+            return System.String.Format("Config:[WidthTime:{0}],[HeightTime:{1}],[TextSpeed:{2}]",WIDTH_INFO,HEIGHT_INFO,TEXT_SPEED_INFO);
         }
 
         private float GetTimes(string[] lines,int index,float baseNum)

@@ -84,7 +84,7 @@ namespace Layers
 
         public override string ToString()
         {
-            return System.String.Format("CharacterLayer:[(left,top):({0,3},{1,3})]",point_.X*Config.Instance.Width,point_.Y*Config.Instance.Height);
+            return ("CharacterLayer:[(left,top):("+point_.X*Config.Instance.Width+","+point_.Y*Config.Instance.Height+")]");
         }
 
         public override void DrawLayer(Graphics g)

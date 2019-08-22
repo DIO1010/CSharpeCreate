@@ -6,26 +6,39 @@ using System.Windows.Forms;
 
 public class Program
 {
+	// Consoleウィンドウを表示させる
+    [System.Runtime.InteropServices.DllImport("kernel32.dll")]
+    private static extern bool AllocConsole();
+
 	public static void Main(string[] args)
 	{
-		Logger.Start();
+		Config.Instance.Reload();
 
 		if(args.Length > 0)
         {
             Debug.Items.Instance.Debug = args[0].Equals("-d");
             Debug.Menu.Instance.Debug = args[0].Equals("-d");
-			Logger.Message("itmes = "+Debug.Items.Instance.Debug.ToString()+", menu = "+Debug.Menu.Instance.Debug.ToString());
+			Utilities.Logger.WriteLog = args[0].Equals("-l");
         }
+		if(args.Length > 1)
+		{
+			Utilities.Logger.WriteLog = args[1].Equals("-l");
+		}
 
-		InitParam();
+		// コンソールウィンドウを表示
+		if(Utilities.Logger.WriteLog) AllocConsole();
+
+		Logger.Start();
+		Logger.Message("itmes = "+Debug.Items.Instance.Debug.ToString()+", menu = "+Debug.Menu.Instance.Debug.ToString());
+
 
 		GameForm form = new GameForm();
 		
 		form.Show();
 
 		float oldtime = (float)System.Environment.TickCount;
-		float wait = 1000 / 30;
-		// float wait = 1000 / 60;
+		// float wait = 1000 / 30;
+		float wait = 1000 / 60;
 
 		while(form.Created)
 		{
@@ -38,39 +51,16 @@ public class Program
 				// form.Draw();
 				// Console.WriteLine("Upadate!");
 				if((float)System.Environment.TickCount<oldtime+wait){
-				// 	// Console.WriteLine("Draw!");
+					// Console.WriteLine("Draw!");
 					form.Draw();
-				// 	form.Update();
+					// form.Update();
 					oldtime += wait;
 				}
 				Debug.FrameRate.Instance.CalculationFPS();
-				// Console.WriteLine(Debug.FrameRate.Instance.FPS);
 			}
 			Application.DoEvents();
 		}
 
 		Logger.End();
-	}
-
-	public static void InitParam()
-	{
-		Config.Instance.Reload();
-		// 実行中のアセンブリーを取得
-        Assembly ass = Assembly.GetExecutingAssembly();
-        Type[] typ = ass.GetTypes();
-		// 名前空間ConstであるクラスはすべてUpdateParamを実行する。
-        foreach(Type t in typ)
-        {
-			if(t.Namespace != null && t.Namespace.Equals("Const"))
-			{
-				t.InvokeMember(
-					"UpdateParam",
-					BindingFlags.InvokeMethod,
-					null,
-					null,
-					new object[]{}
-				);
-			}
-        }
 	}
 }

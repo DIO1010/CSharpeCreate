@@ -105,7 +105,7 @@ namespace Layers
 
         public override string ToString()
         {
-            return System.String.Format("ButtonLayer:[Method:{0}]",method_);
+            return ("ButtonLayer:[Method:"+method_+"]");
         }
 
         public override void DrawLayer(Graphics g)

@@ -6,8 +6,8 @@ namespace Const
     public class Background
     {
         private static string name_ = "BackgroundLayer";
-        private static int height_ = 600;
-        private static int width_ = 800;
+        private static int height_ = (int)(600*Config.Instance.Height);
+        private static int width_ = (int)(800*Config.Instance.Width);
         private static int left_ = 0;
         private static int top_ = 0;
 
@@ -57,17 +57,9 @@ namespace Const
 
         public static void UpdateParam()
         {
-            float t = 600*Config.Instance.Height;
-            height_ = (int)t;
+            height_ = (int)(600*Config.Instance.Height);
 
-            t = 800*Config.Instance.Width;
-            width_  = (int)t;
-
-            t = 0  *Config.Instance.Height;
-            left_   = (int)t;
-            
-            t = 0  *Config.Instance.Width;
-            top_    = (int)t;
+            width_  = (int)(800*Config.Instance.Width);
         }
     }
 }

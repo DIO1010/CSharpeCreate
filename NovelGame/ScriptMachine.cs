@@ -157,6 +157,7 @@ public class ScriptMachine
 
     public override string ToString()
     {
-        return System.String.Format("Script:[CurreLabel:{0}],[index:{1,3}]",currentLabel_,scriptBody_[currentLabel_].Count);
+        // return System.String.Format("Script:[CurreLabel:{0}],[index:{1,3}]",currentLabel_,scriptBody_[currentLabel_].Count);
+        return ("Script:[CurreLabel:"+currentLabel_+"],[index:"+scriptBody_[currentLabel_].Count+"]");
     }
 }

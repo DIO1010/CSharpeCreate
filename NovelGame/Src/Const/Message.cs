@@ -7,13 +7,30 @@ namespace Const
 {
     public class Message
     {
-        private static string name_     = "MessageTextLayer";
-        private static int    width_    = 600;
-        private static int    height_   = 250;
-        private static int    left_     = 0;
-        private static int    top_      = 410;
-        private static int    fontSize_ = 20;
+        private static string name_ = "MessageTextLayer";
+        private static int width_ = (int)(600*Config.Instance.Width);
+        private static int height_ = (int)(250*Config.Instance.Height);
+        private static int left_ = (int)((MessageFrame.LEFT+150)*Config.Instance.Width);
+        private static int top_ = (int)(410*Config.Instance.Height);
+        private static int fontSize_ = (int)(20*Config.Instance.Height);
 
+        // public Message()
+        // {
+        //     float t = 600*Config.Instance.Width;
+        //     width_ = (int)t;
+
+        //     t = 250*Config.Instance.Height;
+        //     height_ = (int)t;
+
+        //     t = (MessageFrame.LEFT+150)*Config.Instance.Width;
+        //     left_ = (int)t;
+
+        //     t = 410*Config.Instance.Height;
+        //     top_ = (int)t;
+
+        //     t = 20*Config.Instance.Height;
+        //     fontSize_ = (int)t;
+        // }
         public static int WIDTH
         {
             get
@@ -88,20 +105,16 @@ namespace Const
 
         public static void UpdateParam()
         {
-            float t = 600*Config.Instance.Width;
-            width_ = (int)t;
+            width_ = (int)(600*Config.Instance.Width);
 
-            t = 250*Config.Instance.Height;
-            height_ = (int)t;
+            height_ = (int)(250*Config.Instance.Height);
 
-            t = (MessageFrame.LEFT+150)*Config.Instance.Width;
-            left_ = (int)t;
+            left_ = (int)((MessageFrame.LEFT+150)*Config.Instance.Width);
 
-            t = 410*Config.Instance.Height;
-            top_ = (int)t;
-
-            t = 20*Config.Instance.Height;
-            fontSize_ = (int)t;
+            top_ = (int)(410*Config.Instance.Height);
+            
+            fontSize_ = (int)(20*Config.Instance.Height);
         }
+
     }
 }

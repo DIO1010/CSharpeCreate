@@ -6,18 +6,39 @@ namespace Const
 {
     public class Choice
     {
-        private static int        height_      = 50;
-        private static int        width_       = 700;
-        private static int        left_        = 85;
-        private static int        top_         = 50;
-        private static int        fontSize_    = 20;
-        private static int        fontPadding_ = 10;
-        private static SolidBrush onBrush_     = new SolidBrush(Color.FromArgb(200,255,  0,255));
-        private static SolidBrush offBrush_    = new SolidBrush(Color.FromArgb(200, 0,200,255));
-        private static SolidBrush fontBrush_   = new SolidBrush(Color.FromArgb(200, 0,  0,  0));
-        private static bool       IsSelect_    = false;
-        private static int        count_    = 0;
-        private static int        index_       = 0;
+        private static int height_ = (int)(50*Config.Instance.Height);
+        private static int width_ = (int)(700*Config.Instance.Width);
+        private static int left_ = (int)(50*Config.Instance.Width);
+        private static int top_ = (int)(85*Config.Instance.Height);
+        private static int fontSize_ = (int)(20*Config.Instance.Height);
+        private static int fontPadding_ = (int)(10*Config.Instance.Height);
+        private static SolidBrush onBrush_ = new SolidBrush(Color.FromArgb(200,255,  0,255));
+        private static SolidBrush offBrush_ = new SolidBrush(Color.FromArgb(200, 0,200,255));
+        private static SolidBrush fontBrush_ = new SolidBrush(Color.FromArgb(200, 0,  0,  0));
+        private static bool IsSelect_ = false;
+        private static int count_ = 0;
+        private static int index_ = 0;
+
+        // public Choice()
+        // {
+        //     float t = 50*Config.Instance.Height;
+        //     height_ = (int)t;
+
+        //     t = 700*Config.Instance.Width;
+        //     width_ = (int)t;
+
+        //     t = 85*Config.Instance.Height;
+        //     top_ = (int)t;
+
+        //     t = 50*Config.Instance.Width;
+        //     left_ = (int)t;
+
+        //     t = 20*Config.Instance.Height;
+        //     fontSize_ = (int)t;
+
+        //     t = 10*Config.Instance.Height;
+        //     fontPadding_ = (int)t;
+        // }
 
         public static int WIDTH
         {
@@ -154,23 +175,18 @@ namespace Const
 
         public static void UpdateParam()
         {
-            float t = 50*Config.Instance.Height;
-            height_ = (int)t;
+            height_ = (int)(50*Config.Instance.Height);
 
-            t = 700*Config.Instance.Width;
-            width_ = (int)t;
-
-            t = 85*Config.Instance.Height;
-            top_ = (int)t;
-
-            t = 50*Config.Instance.Width;
-            left_ = (int)t;
-
-            t = 20*Config.Instance.Height;
-            fontSize_ = (int)t;
-
-            t = 10*Config.Instance.Height;
-            fontPadding_ = (int)t;
+            width_ = (int)(700*Config.Instance.Width);
+            
+            left_ = (int)(50*Config.Instance.Width);
+            
+            top_ = (int)(85*Config.Instance.Height);
+            
+            fontSize_ = (int)(20*Config.Instance.Height);
+            
+            fontPadding_ = (int)(10*Config.Instance.Height);
         }
+
     }
 }

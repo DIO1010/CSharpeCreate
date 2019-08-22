@@ -9,16 +9,16 @@ namespace Const
     public class Slider
     {
         public static string name_ = "SliderLayer";
-        public static int fontSize_ = 20;
+        public static int fontSize_ = (int)(20*Config.Instance.Height);
         private static SolidBrush brush_ = new SolidBrush(Color.FromArgb(255,0,0,0));
         private static string information_;
 
-        public Slider()
-        {
-            string filename = "./Config/config.conf";
-			string[] strs = File.ReadAllLines(filename);
-			information_ = strs[Utilities.Config.TEXT_SPEED_INFO];
-        }
+        // public Slider()
+        // {
+        //     string filename = "./Config/config.conf";
+		// 	string[] strs = File.ReadAllLines(filename);
+		// 	information_ = strs[Utilities.Config.TEXT_SPEED_INFO];
+        // }
 
         public static string NAME
         {
@@ -71,8 +71,7 @@ namespace Const
 
         public static void UpdateParam()
         {
-            float t = 20*Config.Instance.Height;
-            fontSize_ = (int)t;
+            fontSize_ = (int)(20*Config.Instance.Height);
 
             string filename = "./Config/config.conf";
 			string[] strs = File.ReadAllLines(filename);

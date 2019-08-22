@@ -5,9 +5,8 @@ namespace Const
 {
     public class Window
     {
-        // private static int currentTime_ = System.Environment.TickCount;
-        private static int width_ = 800;
-        private static int height_ = 600;
+        private static int width_ = (int)(800*Config.Instance.Width);
+        private static int height_ = (int)(600*Config.Instance.Height);
 
         public static int WIDTH
         {
@@ -27,21 +26,9 @@ namespace Const
 
         public static void UpdateParam()
         {
-            float t = 800*Config.Instance.Width;
-            width_ = (int)t;
+            width_ = (int)(800*Config.Instance.Width);
 
-            t = 600*Config.Instance.Height;
-            height_ = (int)t;
+            height_ = (int)(600*Config.Instance.Height);
         }
-
-        // public static int FPS
-        // {
-        //     get
-        //     {
-        //         int fps = System.Environment.TickCount - currentTime_;
-        //         currentTime_ = System.Environment.TickCount;
-        //         return fps;
-        //     }
-        // }
     }
 }

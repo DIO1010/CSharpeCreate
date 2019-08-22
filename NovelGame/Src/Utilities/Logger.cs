@@ -7,6 +7,19 @@ namespace Utilities
 {
     public class Logger
     {
+        private static bool isLogger_ = false;
+
+        public static bool WriteLog
+        {
+            get
+            {
+                return isLogger_;
+            }
+            set
+            {
+                isLogger_ = value;
+            }
+        }
 
         public static void Start(){
             Write(Utilities.String.Start());
@@ -47,15 +60,18 @@ namespace Utilities
 
         private static void Write(string message)
         {
-            string directory = "Log/"+Utilities.String.Now("yyyy_MM_dd");
-            if(!Directory.Exists(directory))
+            Console.WriteLine(message);
+            if(WriteLog)
             {
-                // Console.WriteLine("Not Exeist!");
-                Directory.CreateDirectory(directory);
+                string directory = "Log/"+Utilities.String.Now("yyyy_MM_dd");
+                if(!Directory.Exists(directory))
+                {
+                    Directory.CreateDirectory(directory);
+                }
+                StreamWriter sw = WriteInit(directory+"/");
+                sw.Write(message);
+                sw.Close();
             }
-            StreamWriter sw = WriteInit(directory+"/");
-            sw.Write(message);
-            sw.Close();
         }
 
         private static StreamWriter WriteInit(string directory)

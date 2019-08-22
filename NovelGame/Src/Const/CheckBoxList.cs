@@ -8,58 +8,29 @@ namespace Const
 	public class CheckBoxList
 	{
 		private static string name_ = "CheckBoxListLayer";
-		private static int height_ = 600;
-		private static int width_ = 800;
-		private static int left_ = 0;
-		private static int top_ = 0;
-		private static int padding_ = 15;
-		private static int fontSize_ = 20;
-		// private static string[] information_ = new string[2];
+		private static int padding_ = (int)(15*Config.Instance.Height);
+		private static int fontSize_ = (int)(20*Config.Instance.Height);
 		private static string[] information_;
 		private static SolidBrush brush_ = new SolidBrush(Color.FromArgb(255,0,0,0));
 
-		public CheckBoxList()
-		{
-			string filename = "./Config/config.conf";
-			string[] strs = File.ReadAllLines(filename);
-			information_ = new string[]
-				{
-					strs[Utilities.Config.WIDTH_INFO],
-					strs[Utilities.Config.HEIGHT_INFO]
-				};
-		}
+		// public CheckBoxList()
+		// {
+		// 	string filename = "./Config/config.conf";
+		// 	string[] strs = File.ReadAllLines(filename);
+		// 	information_ = new string[]
+		// 		{
+		// 			strs[Utilities.Config.WIDTH_INFO],
+		// 			strs[Utilities.Config.HEIGHT_INFO]
+		// 		};
 
-		public static int HEIGHT
-		{
-			get
-			{
-				return height_;
-			}
-		}
+		// 	float t = 20*Config.Instance.Height;
+		// 	fontSize_ = (int)t;
 
-		public static int WIDTH
-		{
-			get
-			{
-				return width_;
-			}
-		}
+		// 	t = 15*Config.Instance.Height;
+		// 	padding_ = (int)t;
 
-		public static int TOP
-		{
-			get
-			{
-				return top_;
-			}
-		}
-
-		public static int LEFT
-		{
-			get
-			{
-				return left_;
-			}
-		}
+		// 	Console.WriteLine("CheckBox.ctor OK!");
+		// }
 
 		public static int Padding{
 			get
@@ -120,21 +91,6 @@ namespace Const
 
 		public static void UpdateParam()
 		{
-			float t = 600*Config.Instance.Height;
-			height_ = (int)t;
-
-			t = 20*Config.Instance.Height;
-			fontSize_ = (int)t;
-
-			t = 800*Config.Instance.Width;
-			width_  = (int)t;
-
-			t = 0  *Config.Instance.Height;
-			left_   = (int)t;
-			
-			t = 0  *Config.Instance.Width;
-			top_    = (int)t;
-
 			string filename = "./Config/config.conf";
 			string[] strs = File.ReadAllLines(filename);
 			information_ = new string[]
@@ -142,6 +98,10 @@ namespace Const
 					strs[Utilities.Config.WIDTH_INFO],
 					strs[Utilities.Config.HEIGHT_INFO]
 				};
+				
+				padding_ = (int)(15*Config.Instance.Height);
+				
+				fontSize_ = (int)(20*Config.Instance.Height);
 		}
 	}
 }

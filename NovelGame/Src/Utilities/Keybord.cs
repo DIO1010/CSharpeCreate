@@ -29,7 +29,7 @@ namespace Utilities
 
         public override string ToString()
         {
-            return System.String.Format("KeyBord:[{0,7}]",keyString_);
+            return ("KeyBord:["+keyString_+"]");
         }
 
         private Keybord()

@@ -71,7 +71,7 @@ namespace Layers
 
         public override string ToString()
         {
-            return System.String.Format("LabelLayer:[value:{0}]",value_);
+            return ("LabelLayer:[value:"+value_+"]");
         }
 
         public override void DrawLayer(Graphics g)

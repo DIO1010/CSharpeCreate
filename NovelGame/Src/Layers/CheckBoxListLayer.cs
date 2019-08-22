@@ -99,8 +99,7 @@ namespace Layers
 
 		public override string ToString()
 		{
-			return System.String.Format(
-				"CheckBoxListLayer:[method:{0}]",method_);
+			return ("CheckBoxListLayer:[method:"+method_+"]");
 		}
 
 		public int MouseHover()

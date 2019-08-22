@@ -58,7 +58,7 @@ namespace Utilities
 
         public override string ToString()
         {
-            return System.String.Format("MousePoint:[(X,Y):({0,3},{1,3})]",X,Y);
+            return ("MousePoint:[(X,Y):("+X+","+Y+")]");
         }
     }
 }

@@ -36,9 +36,15 @@ namespace  States
                 {
                     string filename = "./Config/config.conf";
                     string[] strs = File.ReadAllLines(filename);
-                    strs[0] = Const.CheckBoxList.Information[0];
-                    strs[1] = Const.CheckBoxList.Information[1];
-                    strs[2] = Const.Slider.Information;
+                    if(Const.CheckBoxList.Information != null)
+                    {
+                        strs[0] = Const.CheckBoxList.Information[0];
+                        strs[1] = Const.CheckBoxList.Information[1];
+                    }
+                    if(Const.Slider.Information != null)
+                    {
+                        strs[2] = Const.Slider.Information;
+                    }
                     File.WriteAllLines(filename,strs,System.Text.Encoding.GetEncoding("UTF-8"));
                     ((GameForm)GM).ReloadConfig();
                     // Console.WriteLine("SettingState.Update modified_");

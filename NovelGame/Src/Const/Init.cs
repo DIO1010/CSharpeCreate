@@ -5,10 +5,24 @@ namespace Const
 {
     public class Init
     {
-        private static int width_ = 800;
-        private static int height_ = 600;
+        private static int width_ = (int)(800*Config.Instance.Width);
+        private static int height_ = (int)(600*Config.Instance.Height);
         private static int left_ = 0;
         private static int top_ = 0;
+        // public Init()
+        // {
+        //     float t = 800*Config.Instance.Width;
+        //     width_ = (int)t;
+
+        //     t = 600*Config.Instance.Height;
+        //     height_ = (int)t;
+
+        //     t = 0*Config.Instance.Width;
+        //     left_ = (int)t;
+            
+        //     t = 0*Config.Instance.Height;
+        //     top_ = (int)t;
+        // }
         public static int WIDTH
         {
             get
@@ -43,17 +57,10 @@ namespace Const
 
         public static void UpdateParam()
         {
-            float t = 800*Config.Instance.Width;
-            width_ = (int)t;
-
-            t = 600*Config.Instance.Height;
-            height_ = (int)t;
-
-            t = 0*Config.Instance.Width;
-            left_ = (int)t;
+            width_ = (int)(800*Config.Instance.Width);
             
-            t = 0*Config.Instance.Height;
-            top_ = (int)t;
+            height_ = (int)(600*Config.Instance.Height);
         }
+
     }
 }

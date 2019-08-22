@@ -7,8 +7,8 @@ namespace Utilities
     // public sealed class String
     {
         // private static String myself_ = new Items();
-        private const int nFrame_Base_ = 4;
-        private const int nFrame_Change_ = 5;
+        private const int nFrame_Base_ = 5;
+        private const int nFrame_Change_ = 6;
         private static string startTime_ = Now("HH-mm-ss");
 
         public static string Start()

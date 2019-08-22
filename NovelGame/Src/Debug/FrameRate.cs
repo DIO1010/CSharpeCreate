@@ -48,7 +48,7 @@ namespace Debug
         {
             // int fps = (int)1000 / (System.Environment.TickCount - oldTime_);
             // oldTime_ = System.Environment.TickCount;
-            return System.String.Format("FPS[{0,2}]",fps_);
+            return ("FPS["+fps_+"]");
         }
 
         private FrameRate()
