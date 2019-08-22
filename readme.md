@@ -111,9 +111,9 @@
 	├NovelGame.pdb  
 	├Program.cs  
 	├Program.exe  
-	├release.bat  （起動を自動化）
-	├releaselog.bat  （起動を自動化）
+	├release.bat （起動を自動化）  
+	├releaselog.bat （起動を自動化）  
 	├ScriptMachine.cs（Scriptを管理する。）  
-	└StateManage.cs （状態を管理する。）
+	└StateManage.cs （状態を管理する。）  
   
 以上。  
