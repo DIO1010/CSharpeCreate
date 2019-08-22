@@ -2,5 +2,7 @@
 /Test/
 *.BAK
 *.pdf
-*.cs
-*.exe
+State.cs
+Layer.cs
+State.exe
+Layer.exe
