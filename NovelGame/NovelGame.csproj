@@ -4,6 +4,7 @@
     <OutputType>WinExe</OutputType>
     <TargetFramework>net46</TargetFramework>
     <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <StartupObject>Program</StartupObject>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System.Windows.Forms" />

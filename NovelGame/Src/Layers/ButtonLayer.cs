@@ -49,19 +49,19 @@ namespace Layers
             {
                 if(line.Peek().Contains("left"))
                 {
-                    left = Int32.Parse(GetNeedInfomation(line.Dequeue()));
+                    left = Int32.Parse(GetNeedInformation(line.Dequeue()));
                 }
                 else if(line.Peek().Contains("top"))
                 {
-                    top = Int32.Parse(GetNeedInfomation(line.Dequeue()));
+                    top = Int32.Parse(GetNeedInformation(line.Dequeue()));
                 }
                 else if(line.Peek().Contains("storage"))
                 {
-                    filename = GetNeedInfomation(line.Dequeue());
+                    filename = GetNeedInformation(line.Dequeue());
                 }
                 else if(line.Peek().Contains("method"))
                 {
-                    method = GetNeedInfomation(line.Dequeue());
+                    method = GetNeedInformation(line.Dequeue());
                 }
             }
 
